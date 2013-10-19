@@ -1,0 +1,37 @@
+
+.header {
+    background-color: #fbf5f5 ;    
+}
+
+.photowall {
+    background-color: #fbf4ea;    
+}
+
+.about {
+    background-color: #fbf5f5 ;
+}
+
+.download {
+    background-color: #fbf4ea;
+}
+
+.press {
+    background-color: #fbf5f5 ;    
+}
+
+.footer {
+    background-color: #fbf4ea;
+}
+
+.section {
+    padding-bottom : 2em;    
+}
+
+.sub-section {
+    padding-bottom : 0.8em;
+}
+
+.title {
+    font-size : 1.5em;        
+    padding-bottom : 0.2em;
+}

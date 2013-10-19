@@ -1,4 +1,4 @@
-tinyboy
+Tinyboy
 =======
 
-Tinyboy - A 3D printer designed for education
+Tinyboy - A 3D printer design for education
