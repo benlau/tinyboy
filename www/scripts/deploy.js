@@ -31,12 +31,19 @@ function travel(folder, callback,done) {
     });
 }
 
-function upload(bucket,file,callback) {
-    console.log("Uploading " + file);
+function upload(options,file,callback) {
+    var bucket = options.bucket;
+    var root = options.root;
+    var target = file.replace(root,"");
+    if (target.charAt(0) == "/")
+        target = target.substr(1);
+    console.log("Uploading " + file + " to s3://" + bucket + "/" + target);
+    
     fs.readFile(file,function(err,data) {
         var params = {
             Bucket : bucket,
-            Key : file,
+            Key : target,
+            ACL : "public-read",
             Body : data
         }
         s3.putObject(params,function(err,data) {
@@ -53,8 +60,12 @@ function upload(bucket,file,callback) {
 (function() {
     var folder = "www/src";
     var code = 0;
+    var options = {
+        bucket : "tinyboy-preview",
+        root : folder
+    }
     travel(folder,function(root,stat,next){
-        upload("tinyboy-preview",root+ "/" +stat.name,function(err) {
+        upload(options,root+ "/" +stat.name,function(err) {
             if (err)
                 code = 1;
             next();
