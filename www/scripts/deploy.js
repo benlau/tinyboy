@@ -5,6 +5,7 @@
 var AWS = require('aws-sdk'),
     s3 = new AWS.S3(),
     fs = require('fs'),
+    mime = require('mime'),
     walk = require('walk');
 
 
@@ -34,6 +35,7 @@ function travel(folder, callback,done) {
 function upload(options,file,callback) {
     var bucket = options.bucket;
     var root = options.root;
+    var mimeType = mime.lookup(file);
     var target = file.replace(root,"");
     if (target.charAt(0) == "/")
         target = target.substr(1);
@@ -44,6 +46,7 @@ function upload(options,file,callback) {
             Bucket : bucket,
             Key : target,
             ACL : "public-read",
+            ContentType : mimeType,
             Body : data
         }
         s3.putObject(params,function(err,data) {
