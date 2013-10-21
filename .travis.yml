@@ -1,6 +1,7 @@
 node_js: 
 - "0.10"
-dd: 
-  secure: 08T8H3/15ymy19o/FRWAKAxhyTGFfAsxt4QobtA5+U1pWW4ct7GD9lM5LxfUyiVw+H7mD9DqDc3HCimNUnph2l5w8C/xSu4hxcoU3DneEga21b/jaafR2cpKhfaxkO1Xd/9t/JwGrQ/xuN8JcbOe+v82IqU+q8n7+oHKrCjYxiQ=
-#after_success:  "node ./www/scripts/deploy.js"
+env: 
+  global:
+    secure: 08T8H3/15ymy19o/FRWAKAxhyTGFfAsxt4QobtA5+U1pWW4ct7GD9lM5LxfUyiVw+H7mD9DqDc3HCimNUnph2l5w8C/xSu4hxcoU3DneEga21b/jaafR2cpKhfaxkO1Xd/9t/JwGrQ/xuN8JcbOe+v82IqU+q8n7+oHKrCjYxiQ=
+after_script:  "echo 'after script'"
 language: node_js
