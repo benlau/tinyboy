@@ -8,7 +8,7 @@ var AWS = require('aws-sdk'),
     walk = require('walk');
 
 
-function travel(folder, callback) {
+function travel(folder, callback,done) {
     var options = {
             followLinks: false,
             filters: ["*.DS_Store", "*.swp"]
@@ -25,6 +25,9 @@ function travel(folder, callback) {
     
     walker.on("end", function(){
         console.log("Done");    
+        if (done) {
+            done();    
+        }
     });
 }
 
@@ -49,9 +52,14 @@ function upload(bucket,file,callback) {
 
 (function() {
     var folder = "www/src";
+    var code = 0;
     travel(folder,function(root,stat,next){
         upload("tinyboy-preview",root+ "/" +stat.name,function(err) {
+            if (err)
+                code = 1;
             next();
         });
+    },function() {
+        process.exit(code);
     });
 })();
