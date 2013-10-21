@@ -2,7 +2,7 @@
   "name": "tinyboy",
   "version": "0.0.1",
   "scripts": {
-    "test": "echo \"Passed. \" && exit 0"
+    "test": "node ./www/scripts/deploy.js"
   },
   "description": "Tinyboy",
   "dependencies": {
