@@ -6,7 +6,6 @@ body {
 
 .header {
     background-color: #fbf5f5 ;  
-    font-size:2em;
     color : black;
 }
 
@@ -58,6 +57,6 @@ body {
 }
 
 .title {
-    font-size : 2em;        
+    font-size : 2em;       
     padding-bottom : 0.2em;
 }
