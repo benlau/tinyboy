@@ -30,16 +30,8 @@ body {
     background-color: #fbf4ea;
 }
 
-.footer ul {
-    text-align:left;    
-}
-
-.footer li {
-    display : block;
-}
-
 .section {
-    padding-top : 0.4em;
+    padding-top : 0.6em;
     padding-bottom : 0.5em;
 }
 
