@@ -5,11 +5,8 @@ body {
 }
 
 .header {
-}
-
-.header > div { 
-    font-size:4em;
-    color : black;
+    background-color: #fbf5f5 ;  
+    font-size:2em;
 }
 
 .photowall {
