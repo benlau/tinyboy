@@ -7,6 +7,7 @@ body {
 .header {
     background-color: #fbf5f5 ;  
     font-size:2em;
+    color : black;
 }
 
 .photowall {
@@ -30,7 +31,16 @@ body {
     background-color: #fbf4ea;
 }
 
+.footer ul {
+    text-align:left;    
+}
+
+.footer li {
+    display : block;
+}
+
 .section {
+    padding-top : 0.4em;
     padding-bottom : 0.5em;
 }
 
