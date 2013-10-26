@@ -3,7 +3,10 @@
 // Deploy the website to S3
 
 var AWS = require('aws-sdk'),
-    s3 = new AWS.S3(),
+    s3 = new AWS.S3({
+//        endpoint : "www2.tinyboy.net.s3-website-us-west-1.amazonaws.com"
+        region : "us-west-1"
+    }),
     fs = require('fs'),
     mime = require('mime'),
     walk = require('walk');
