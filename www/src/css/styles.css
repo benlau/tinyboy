@@ -32,12 +32,13 @@ body {
 
 .news {
     padding: 0.2em 0.4em 0.2em 0.4em ;
+    margin-bottom: 0.2em;
     background-color:#fff;
     color: black;
     border-width: 1px;
     border-color: #ddd;
     border-radius: 4px 4px 4px 4px;
-    box-shadow: 2px 2px 2px 2px;    
+    box-shadow: 0px 2px 2px 0px;    
 }
 
 .footer {
