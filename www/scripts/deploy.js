@@ -64,7 +64,7 @@ function upload(options,file,callback) {
     var folder = "www/src";
     var code = 0;
     var options = {
-        bucket : "tinyboy-preview",
+        bucket : "www2.tinyboy.net",
         root : folder
     }
     travel(folder,function(root,stat,next){
