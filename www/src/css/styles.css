@@ -13,6 +13,11 @@ body {
     background-color: #777777;
 }
 
+.photowall img {
+    width : 100%;
+    max-width : 400px;
+}
+
 .about {
     background-color: #fbf5f5 ;
 }
@@ -23,6 +28,16 @@ body {
 
 .press {
     background-color: #15a5d7;    
+}
+
+.news {
+    padding: 0.2em 0.4em 0.2em 0.4em ;
+    background-color:#fff;
+    color: black;
+    border-width: 1px;
+    border-color: #ddd;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 2px 2px 2px 2px;    
 }
 
 .footer {
