@@ -64,13 +64,13 @@ body {
 }
 
 .section {
-    padding-top : 0.6em;
-    padding-bottom : 0.5em;
+    padding-top : 0.8em;
+    padding-bottom : 0.8em;
 }
 
 .sub-section {
-    padding-top : 0.2em;
-    padding-bottom : 0.8em;
+    padding-top : 0.6em;
+    padding-bottom : 1em;
 }
 
 .sub-section-odd {
