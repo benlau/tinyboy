@@ -75,6 +75,14 @@ body {
     background-color: #f6f5f4;    
 }
 
+.press p {
+    white-space:nowrap;
+}
+
+.press blockquote {
+    overflow: hidden;
+}
+
 .news {
     padding: 0.2em 0.4em 0.4em 0.4em ;
     margin-bottom: 1em;
