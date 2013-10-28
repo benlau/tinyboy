@@ -2,6 +2,7 @@
 body {
     background-color: #f2f2f2;    
     color : #fff;
+    font-family: "Helvetica Neue,Helvetica,Arial,sans-serif"
 }
 
 .header {
@@ -16,6 +17,14 @@ body {
     font-size : 1.8em;
     margin-top : 0.3em;
     margin-bottom: 0.4em;
+}
+
+.header-logo {
+    background-image:url(header-logo.png);
+    height : 45px;
+    background-repeat:no-repeat;
+    margin-top: 1px;
+    margin-bottom:5px;
 }
 
 .hero {
