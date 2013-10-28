@@ -46,9 +46,29 @@ body {
     background-color: #fbf5f5 ;
 }
 
+.about-1 h2 {
+    color : #ff4a60;
+}
+
+.about-2 h2 {
+    color : #ffa800;
+}
+
+.about-3 h2 {
+    color : #81ba1f;
+}
+
+.about-4 h2 {
+    color : #15a5d7;
+}
+
 .download {
     background-color: #E8E9EA;
     color : #6f6f6f;
+}
+
+.download h3 {
+    color: #ff2e5f;
 }
 
 .press {
@@ -57,7 +77,7 @@ body {
 
 .news {
     padding: 0.2em 0.4em 0.4em 0.4em ;
-    margin-bottom: 0.2em;
+    margin-bottom: 1em;
     background-color:#fff;
     color: black;
     border-width: 1px;
