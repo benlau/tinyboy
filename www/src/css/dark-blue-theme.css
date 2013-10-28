@@ -1,0 +1,98 @@
+
+body {
+    background-color: #f2f2f2;    
+    color : #fff;
+}
+
+.header {
+    background-color: #252525 ;  
+    color : #fff;
+}
+
+.header h1 {
+    font-size : 1.8em;
+}
+
+.photowall {
+    background-color: #1a6e9e;
+}
+
+.photowall img {
+    width : 100%;
+    max-width : 400px;
+}
+
+.about {
+    background-color: #fbf5f5 ;
+}
+
+.download {
+    background-color: #E8E9EA;
+    color : #6f6f6f;
+}
+
+.press {
+    background-color: #f6f5f4;    
+}
+
+.news {
+    padding: 0.2em 0.4em 0.4em 0.4em ;
+    margin-bottom: 0.2em;
+    background-color:#fff;
+    color: black;
+    border-width: 1px;
+    border-color: #ddd;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0px 2px 2px 0px;    
+}
+
+.news div {
+}
+
+.news h4 {
+    width : 100%;
+    padding-right : 0.4em;    
+    white-space:nowrap;
+    overflow:hidden;
+}
+
+.news hr {
+    width : 90%;    
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 0;
+    border-top: 1px solid #eeeeee;
+}
+
+.footer {
+    background-color: #fbf4ea;
+}
+
+.section {
+    padding-top : 0.8em;
+    padding-bottom : 0.8em;
+}
+
+.sub-section {
+    padding-top : 0.6em;
+    padding-bottom : 1em;
+}
+
+.sub-section .container {
+    border-bottom: 1px solid #dddddd;    
+}
+
+.sub-section-odd {
+    background-color : #f7f6f5;
+    color : #6f6f6f;
+}
+
+.sub-section-even {
+    background-color : #f6f5f4;
+    color : #6f6f6f;    
+}
+
+.title {
+    font-size : 2em;       
+    padding-bottom : 0.2em;
+}
