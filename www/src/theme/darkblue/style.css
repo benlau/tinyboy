@@ -73,11 +73,16 @@ body {
 
 .download {
     background-color: #E8E9EA;
-    color : #6f6f6f;
+    color : #393939;
 }
 
 .download h3 {
-    color: #ff2e5f;
+    color: #252525;
+}
+
+.tinyboy-frame-logo {
+    background:url(tinyboy-frame.png) no-repeat center;
+    height:100px;
 }
 
 .press {
