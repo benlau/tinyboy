@@ -45,6 +45,7 @@ body {
 }
 
 .hero h2 {
+    text-shadow: #136491 0px 2px 3px;
     text-align: center;
     text-transform:uppercase;
     color : #d9edff;
@@ -149,6 +150,7 @@ body {
 .sub-section {
     padding-top : 0.6em;
     padding-bottom : 1em;
+    margin-bottom: 1em;
 }
 
 .sub-section .container {
@@ -170,3 +172,6 @@ body {
     padding-bottom : 0.2em;
 }
 
+.no-separator .container {
+    border-bottom-width: 0px;    
+}
