@@ -89,13 +89,16 @@ body {
     background-color: #f6f5f4;    
 }
 
-.press p {
-    white-space:nowrap;
+.press blockquote p {
+    height: 2.5em;     
 }
 
 .press blockquote {
     overflow: hidden;
+    background-color: #fefce5;
+    border-left: 5px solid #feecc4;
 }
+
 
 .news {
     padding: 0.2em 0.4em 0.4em 0.4em ;
@@ -167,7 +170,3 @@ body {
     padding-bottom : 0.2em;
 }
 
-blockquote {
-    background-color: #fefce5;
-    border-left: 5px solid #feecc4;
-}
