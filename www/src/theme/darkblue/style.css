@@ -150,10 +150,11 @@ body {
 .sub-section {
     padding-top : 0.6em;
     padding-bottom : 1em;
-    margin-bottom: 1em;
+    margin-bottom: 0em;
 }
 
 .sub-section .container {
+    padding-bottom: 1em;
     border-bottom: 1px solid #dddddd;    
 }
 
