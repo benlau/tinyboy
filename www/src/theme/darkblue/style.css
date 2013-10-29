@@ -127,7 +127,15 @@ body {
 }
 
 .footer {
-    background-color: #fbf4ea;
+    background-color: #7f7f7f;
+}
+
+.footer li {
+    display:block;
+}
+
+.footer a {
+    color : #f7f7f7;
 }
 
 .section {
@@ -157,4 +165,9 @@ body {
 .title {
     font-size : 2em;       
     padding-bottom : 0.2em;
+}
+
+blockquote {
+    background-color: #fefce5;
+    border-left: 5px solid #feecc4;
 }
