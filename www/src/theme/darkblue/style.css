@@ -77,7 +77,8 @@ body {
 }
 
 .download h3 {
-    color: #252525;
+    font-family: effra-bold, sans-serif;
+    color: #333;
 }
 
 .tinyboy-frame-logo {
