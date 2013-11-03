@@ -2,7 +2,7 @@
   "name": "tinyboy",
   "version": "0.0.1",
   "scripts": {
-    "test": "node ./www/scripts/deploy.js www2.tinyboy.net"
+    "test": "node ./www/scripts/deploy.js www.tinyboy.net"
   },
   "description": "Tinyboy",
   "dependencies": {

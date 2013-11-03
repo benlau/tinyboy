@@ -1,8 +1,8 @@
 env: 
   global: 
-  - secure: Mu/CEatZMZsug9WjiIj0aUJxDQATXgnigQ+D0TN+60ulXe6+5Y/ZMGb0Bndu4enmtWVvjwy9ItR9HZ2fra8mUnFOU+XsTp6B0Q5OqBckq4SkCxTv6SycBm377E7kZk5WfM3HB5WluJgAUF/u6qqWziZtKEPAzEmiZdGViWblUrE=
-  - secure: ftDXQtxlB1GzHOL2UNkb7hfLSC46yXyAL37FHz1GaNRnPen8WQK0/R37ctC5Udfbt/T9uoWiEDCzBcWxz4Il8zR25910fEl4ncH6koPmbUL/BWKZpJEgt1Hi59mtrFg31kM4g6ww6AED3H0e8K51QV64Exl/eAQx8R29lSkfnYQ=
+  - secure: TulY/0pyaPN9kXu51L84+uuC2NA/M7q/uQ53kUm8qWnox+x3MVzDjP9s6Sc3kDqpXNUYnMCru0bKBtvzjbXXueeOR0t9FxEv30x+PAg7Xl6Fu0ErFFDO8B0mmbnMw/ybABhD7l3qxlTMgxCNJ/FgkVwbrnQ5gBeTGrex4Z1VO3o=
+  - secure: WRH5Tmgv7Wru3M5bt3Sf+NxWGfkQXDASG3QTKEfzcqJzOJ8KmmddZjLstqvmB372pkAsTDlOF7ok505HengEuzk/UC/98bae8aaVP6tDWv4bJt1zdS6L9K8Yk//m9shPXkPGrhebIgiAE2k1S+tzT4psvAVp3NQ/ip7n2diH/x4=
+language: node_js
 after_script: echo 'after script'
 node_js: 
 - "0.10"
-language: node_js
