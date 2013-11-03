@@ -70,6 +70,16 @@ function upload(options,file,callback) {
         bucket : "www2.tinyboy.net",
         root : folder
     }
+    
+    var args = process.argv.splice(2);
+    if (args.length < 1){
+        console.log("Bucket missing.");
+        process.exit(-1);
+        return;
+    }
+    
+    options.bucket = args[0];
+    
     travel(folder,function(root,stat,next){
         upload(options,root+ "/" +stat.name,function(err) {
             if (err)
