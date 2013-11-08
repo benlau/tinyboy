@@ -5,4 +5,4 @@ env:
   global: 
   - secure: qwBJbc4MkWXivmVwMNcHRPiMJAI63j+QWmLGh3upQrjfKeVVZhHZCLjmkFWHGgXBFPq37g1q+2dEF4UM2DbIdT+2Z3/PfMb27fBIvVNwmuY5+DosKh0s72to3NKjQBKUGEl5Jg/8OMxEAThWqbh1tOfB2E7N4cZ0ajvlOTE30lo=
   - secure: lHvcMT1JT+i+5fEU7Jx6EgdKanOsAavPF16Mpopdc3iIlgX37lb8MKXhc7q/iddyD/k0UmKJjKLGRJw1Xpb8bcqVixnzlD7g22L0qHCdBiawTkjH0YbDZUrWPoOMS9YG4IBRDu3dLfwcj2YtzluQyvGlSZW59x1pYppG8jlxFyg=
-after_script: echo 'after script'
+after_script: node ./www/scripts/deploy.js www.tinyboy.net
