@@ -27,7 +27,7 @@ body {
 }
 
 .hero {
-    background-color: #1a6e9e;
+   background-color: #ECECEC;
 }
 
 .hero img {
@@ -37,18 +37,16 @@ body {
 
 .hero h1 {
     text-align: center;
-    text-shadow: #136491 0px 2px 3px;
     font:"proxima-nova","lucida grande",arial,sans-serif;
-    color : #fff;
+    color : #575757;
     font-size : 2.5em;
 }
 
 .hero h2 {
-    text-shadow: #136491 0px 2px 3px;
     text-align: center;
-    text-transform:uppercase;
-    color : #d9edff;
+    color : #575757;
     font-size: 1.5em;
+    margin-bottom: 0.5em;
 }
 
 .about {
@@ -198,3 +196,15 @@ body {
 .no-separator .container {
     border-bottom-width: 0px;    
 }
+
+.description {
+    line-height:150%;
+}
+
+.titleimg {
+    box-shadow: 0em 0em 1em 0.3em #8A8A8A;
+    margin-bottom: 0.3
+        em;
+    margin-top: 1em;
+}
+    
