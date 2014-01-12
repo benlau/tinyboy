@@ -5,4 +5,13 @@ env:
   global: 
   - secure: qwBJbc4MkWXivmVwMNcHRPiMJAI63j+QWmLGh3upQrjfKeVVZhHZCLjmkFWHGgXBFPq37g1q+2dEF4UM2DbIdT+2Z3/PfMb27fBIvVNwmuY5+DosKh0s72to3NKjQBKUGEl5Jg/8OMxEAThWqbh1tOfB2E7N4cZ0ajvlOTE30lo=
   - secure: lHvcMT1JT+i+5fEU7Jx6EgdKanOsAavPF16Mpopdc3iIlgX37lb8MKXhc7q/iddyD/k0UmKJjKLGRJw1Xpb8bcqVixnzlD7g22L0qHCdBiawTkjH0YbDZUrWPoOMS9YG4IBRDu3dLfwcj2YtzluQyvGlSZW59x1pYppG8jlxFyg=
-after_script: node ./www/scripts/deploy.js www.tinyboy.net
+deploy: 
+  - provider: s3
+    secret_access_key: 
+      secure: xGVM/RX0IAytGkXPKQxTQRDVMCpb3coiY1YP5DxpvgRp/dquX3pABpcCp688kxLR2eKoEEuVrnzwMFnRQT2K9VtIX8rZZVlqrNLsdYs2GF+TzcJ9s98Pc4jEUCupryr3BJRmGzkHCaldfcZPKhjgRuyJL2HZgJY4ssplDPQpch4=
+    secret_access_key_id: 
+      secure: xlTYPcPGRgMZq7ebPeQ2n/jRdapYrTbDMJOmd72ds9W/mcO45F88/gNR1ge4usA01zNkN1P5PwxTl75pnOynTOeWlWObU27Q5UMN5TAjKr7e/5kKPFRIA281UZDPEiE6sSUCmBzVL+sEmT2FKJdoF02wID9RfNXq+ZTG6OXo2g0=
+    local-dir: www/src
+    bucket: www.tinyboy.net
+    skip_cleanup: true
+
