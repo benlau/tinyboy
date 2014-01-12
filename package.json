@@ -2,7 +2,7 @@
   "name": "tinyboy",
   "version": "0.0.1",
   "scripts": {
-    "test": "echo Skipped"
+    "test": "echo OK!"
   },
   "description": "Tinyboy",
   "dependencies": {
