@@ -16,6 +16,7 @@ deploy:
     local-dir: www/src
     bucket: www.tinyboy.net
     skip_cleanup: false
+    region: us-west-1
     on:
       branch: release
 
