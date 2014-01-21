@@ -9,14 +9,26 @@ before_deploy: "echo 'ready?'"
 after_deploy: "Finished"
 deploy: 
   - provider: s3
+    bucket: www2.tinyboy.net
+    region: us-west-1
+    local-dir: www/src
+    secret_access_key: 
+      secure: Bt0g0FfCsXkTObSvX173TEcjz97uIlYCOwYQ47AMQo+oZ7TGL3uV4u2PlxnsIASr03VHy9eW3oMSk4wUvlOfOcAu8DIMbyHWnMhxZGubpX3O3EOQj+faQ6fuiRLcPbYhr/8lXvHgXLijkzrHg414xskNG3mNgeVHHb8g846jc9A=
+    access_key_id: 
+      secure: Cg3PV0vZXTwUqxfOm4PXM5GY7/zTjT/T0ZoQRgRa8xi5Vdnwh6KDwZ5H0zNd/jirYHyrs7JpFxQxX5dlIH+vYuGuyfCQ6n4EV0bbrZgPkoEsCRrGgo+C+KzsesVTw1Xrji7rHB7phv7XC5DZ6h9G+gkmEzQyNk9E9/GWN4xe/9s=
+    edge: true
+    on:
+      branch: master
+  - provider: s3
+    bucket: www.tinyboy.net
+    region: us-west-1
+    local-dir: www/src
     secret_access_key: 
       secure: xGVM/RX0IAytGkXPKQxTQRDVMCpb3coiY1YP5DxpvgRp/dquX3pABpcCp688kxLR2eKoEEuVrnzwMFnRQT2K9VtIX8rZZVlqrNLsdYs2GF+TzcJ9s98Pc4jEUCupryr3BJRmGzkHCaldfcZPKhjgRuyJL2HZgJY4ssplDPQpch4=
     access_key_id: 
       secure: xlTYPcPGRgMZq7ebPeQ2n/jRdapYrTbDMJOmd72ds9W/mcO45F88/gNR1ge4usA01zNkN1P5PwxTl75pnOynTOeWlWObU27Q5UMN5TAjKr7e/5kKPFRIA281UZDPEiE6sSUCmBzVL+sEmT2FKJdoF02wID9RfNXq+ZTG6OXo2g0=
-    local-dir: www/src
-    bucket: www.tinyboy.net
     skip_cleanup: false
-    region: us-west-1
+    edge: true
     on:
       branch: release
 
