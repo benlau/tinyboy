@@ -2,12 +2,9 @@
   "name": "tinyboy",
   "version": "0.0.1",
   "scripts": {
-    "test": "echo Skipped"
+    "test": "echo OK!"
   },
   "description": "Tinyboy",
   "dependencies": {
-    "aws-sdk": "~1.9.0",
-    "walk": "~2.2.1",
-    "mime": "~1.2.11"
   }
 }

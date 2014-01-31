@@ -1,8 +1,34 @@
-env: 
-  global: 
-  - secure: Mu/CEatZMZsug9WjiIj0aUJxDQATXgnigQ+D0TN+60ulXe6+5Y/ZMGb0Bndu4enmtWVvjwy9ItR9HZ2fra8mUnFOU+XsTp6B0Q5OqBckq4SkCxTv6SycBm377E7kZk5WfM3HB5WluJgAUF/u6qqWziZtKEPAzEmiZdGViWblUrE=
-  - secure: ftDXQtxlB1GzHOL2UNkb7hfLSC46yXyAL37FHz1GaNRnPen8WQK0/R37ctC5Udfbt/T9uoWiEDCzBcWxz4Il8zR25910fEl4ncH6koPmbUL/BWKZpJEgt1Hi59mtrFg31kM4g6ww6AED3H0e8K51QV64Exl/eAQx8R29lSkfnYQ=
-after_script: node ./www/scripts/deploy.js www2.tinyboy.net
+language: node_js
 node_js: 
 - "0.10"
-language: node_js
+env: 
+  global: 
+  - secure: qwBJbc4MkWXivmVwMNcHRPiMJAI63j+QWmLGh3upQrjfKeVVZhHZCLjmkFWHGgXBFPq37g1q+2dEF4UM2DbIdT+2Z3/PfMb27fBIvVNwmuY5+DosKh0s72to3NKjQBKUGEl5Jg/8OMxEAThWqbh1tOfB2E7N4cZ0ajvlOTE30lo=
+  - secure: lHvcMT1JT+i+5fEU7Jx6EgdKanOsAavPF16Mpopdc3iIlgX37lb8MKXhc7q/iddyD/k0UmKJjKLGRJw1Xpb8bcqVixnzlD7g22L0qHCdBiawTkjH0YbDZUrWPoOMS9YG4IBRDu3dLfwcj2YtzluQyvGlSZW59x1pYppG8jlxFyg=
+before_deploy: "echo 'Deploying...'"
+after_deploy: "echo 'Deployed'"
+deploy: 
+  - provider: s3
+    bucket: www2.tinyboy.net
+    region: us-west-1
+    local-dir: www/src
+    secret_access_key: 
+      secure: Bt0g0FfCsXkTObSvX173TEcjz97uIlYCOwYQ47AMQo+oZ7TGL3uV4u2PlxnsIASr03VHy9eW3oMSk4wUvlOfOcAu8DIMbyHWnMhxZGubpX3O3EOQj+faQ6fuiRLcPbYhr/8lXvHgXLijkzrHg414xskNG3mNgeVHHb8g846jc9A=
+    access_key_id: 
+      secure: Cg3PV0vZXTwUqxfOm4PXM5GY7/zTjT/T0ZoQRgRa8xi5Vdnwh6KDwZ5H0zNd/jirYHyrs7JpFxQxX5dlIH+vYuGuyfCQ6n4EV0bbrZgPkoEsCRrGgo+C+KzsesVTw1Xrji7rHB7phv7XC5DZ6h9G+gkmEzQyNk9E9/GWN4xe/9s=
+    edge: true
+    on:
+      branch: master
+  - provider: s3
+    bucket: www.tinyboy.net
+    region: us-west-1
+    local-dir: www/src
+    secret_access_key: 
+      secure: xGVM/RX0IAytGkXPKQxTQRDVMCpb3coiY1YP5DxpvgRp/dquX3pABpcCp688kxLR2eKoEEuVrnzwMFnRQT2K9VtIX8rZZVlqrNLsdYs2GF+TzcJ9s98Pc4jEUCupryr3BJRmGzkHCaldfcZPKhjgRuyJL2HZgJY4ssplDPQpch4=
+    access_key_id: 
+      secure: xlTYPcPGRgMZq7ebPeQ2n/jRdapYrTbDMJOmd72ds9W/mcO45F88/gNR1ge4usA01zNkN1P5PwxTl75pnOynTOeWlWObU27Q5UMN5TAjKr7e/5kKPFRIA281UZDPEiE6sSUCmBzVL+sEmT2FKJdoF02wID9RfNXq+ZTG6OXo2g0=
+    skip_cleanup: false
+    edge: true
+    on:
+      branch: release
+
