@@ -27,7 +27,7 @@ body {
 }
 
 .hero {
-    background-color: #1a6e9e;
+   background-color: #1a6e9e;
 }
 
 .hero img {
@@ -37,18 +37,19 @@ body {
 
 .hero h1 {
     text-align: center;
-    text-shadow: #136491 0px 2px 3px;
+    text-shadow: #136491 0px 2px 3px;    
     font:"proxima-nova","lucida grande",arial,sans-serif;
     color : #fff;
     font-size : 2.5em;
 }
 
 .hero h2 {
-    text-shadow: #136491 0px 2px 3px;
+    text-shadow: #136491 0px 2px 3px;    
     text-align: center;
-    text-transform:uppercase;
-    color : #d9edff;
+    color : #fff;
     font-size: 1.5em;
+    margin-bottom: 0.5em;
+    text-transform:uppercase;
 }
 
 .about {
@@ -197,4 +198,27 @@ body {
 
 .no-separator .container {
     border-bottom-width: 0px;    
+}
+
+.description {
+    line-height:150%;
+}
+
+.titleimg {
+    /*    
+    box-shadow: 0em 0em 1em 0.3em #808080; 
+    */
+    margin-bottom: 0.3em;
+    margin-top: 1em;
+}
+
+.backgroundgradient{
+    background-image:url(header-bg.png);
+    background-size:70%;
+    max-width:940px;
+    margin-right: auto;
+    margin-left: auto;
+    background:rgba(0,0,0,0.4);
+    background-position:center;
+    background-repeat:repeat-y
 }
